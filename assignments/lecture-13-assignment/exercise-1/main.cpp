@@ -1,0 +1,20 @@
+#include <iostream>
+#include <ucm_random>
+
+using namespace std;
+
+int main() {
+
+    RNG generator;
+
+    int n, a, b;
+
+    cin >> n >> a >> b;
+
+    for(int i = 0; i <n; i++){
+        int x = generator.get(a,b);
+        cout << x << endl;
+    }
+
+	return 0;
+}
